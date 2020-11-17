@@ -1,0 +1,139 @@
+.landing-container {
+    width: 70%;
+    display: flex;
+    /* flex-direction: column; */
+    margin: auto;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.nav-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(146, 60, 3);
+    padding: 1rem auto;
+}
+
+.nav-logo-icon {
+    width: 10rem;
+    height: 10rem
+}
+
+.nav-logo {
+    width: 40%;
+}
+
+ul.nav-list {
+    display: flex;
+    width: fit-content;
+    justify-content: flex-end
+    ;
+}
+
+li.nav-items {
+    list-style-type: none;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: 0 2rem
+}
+
+li.nav-items > span {
+    cursor: pointer;
+    padding: 1rem 1rem;
+    color: #fff;
+}
+
+li.nav-items > span:hover {
+    font-weight: bolder;
+    /* color: rgba(0, 0, 255, 0.349); */
+    border-bottom: 2px solid #fff;
+}
+
+li.nav-items > span:active {
+    border-bottom: 2px solid blue;
+}
+
+button.auth-blue {
+    background-color: blue;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+section.app-description{
+    background-color: rgb(146, 60, 3);
+    padding: 2rem 0;
+    height: fit-content;
+}
+
+section.description, section.phone-image  {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.description {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+section.phone-image {
+    justify-content: flex-end;
+}
+
+section.phone-image > img {
+    height: 60rem;
+    /* width: 20rem; */
+}
+
+section.description > .text{
+    text-align: left;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+.text > span.strong-logo {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 10rem;
+}
+
+button.auth-shade {
+    padding: 1.5rem 4rem;
+    color: rgb(146, 60, 3);
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button.auth-inshade {
+    padding: 1.5rem 4rem;
+    background-color:transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button.auth-shade:hover, button.auth-inshade:hover {
+    font-weight: bold;
+    opacity: .9;
+}
