@@ -1,5 +1,4 @@
 import { faPaperclip, faPaperPlane, faSmile } from "@fortawesome/free-solid-svg-icons";
-import * as allIcon from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
@@ -60,7 +59,6 @@ export const ChatContainer = () => {
 }
 
 export const ChatInput = () => {
-    console.log("These are all icons >>>> ", allIcon);
     const [openIcons, setOpenIcons] = useState(false)
     return (
         <div>
@@ -80,13 +78,12 @@ export const ChatInput = () => {
             </div>
             <div style={openIcons ? { display: "flex", justifyContent: "space-evenly", padding: '1rem', maxHeight: '20rem', flexWrap: 'wrap', overflowY: 'scroll', fontSize: '1rem', color: 'orange', margin: '1rem'} : {display: 'none'}}>
                 {
-                    Object.keys(allIcon).map(key => {
-                        console.log("Key >> ", key);
-                        return (key && key !== 'fas') && (
-                        <div className='chat_send-button'>
-                            <FontAwesomeIcon icon={allIcon[key]} key={`${key}`} rotate={50} className='send-logo' />
-                        </div>
-                    )})
+                    // Object.keys(allIcon).map(key => {
+                    //     return (key && key !== 'fas') && (
+                    //     <div className='chat_send-button'>
+                    //         <FontAwesomeIcon icon={allIcon[key]} key={`${key}`} rotate={50} className='send-logo' />
+                    //     </div>
+                    // )})
                 }
             </div>
         </div>    

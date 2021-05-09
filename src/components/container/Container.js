@@ -1,10 +1,8 @@
 import './Container.css';
 
-const Container = ({ children }) => {
-
-    console.log("Components gotten for display >>> ", { children });
+const Container = ({ children, className }) => {
     return (
-        <div className="flex-container">
+        <div className={`flex-container ${className}`}>
             {children}
         </div>
     )
